@@ -237,7 +237,7 @@
       padding: 25px;
       display: flex;
       .plant-growing__img {
-        background: url(img/grass-cutting.svg);
+        background: url(img/Plant-Growing.svg);
         background-position: center;
         background-repeat: no-repeat;
         img {
@@ -816,11 +816,9 @@
       }
     }
     .staff-process__block {
-      height: 100%;
       width: 100%;
       background-color: white;
       padding-top: 50px;
-      margin-bottom: 55px;
       .working-process__block {
         .wp-text__block {
           h2 {
@@ -1017,13 +1015,13 @@
         }
         .wp-img__block {
           position: relative;
-          margin-bottom: 100px;
           img {
             width: 100%;
+            height: 100%;
           }
           .wp-textbtn__block {
             position: absolute;
-            padding: 50px 30px;
+            padding: 40px 30px;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -1052,14 +1050,56 @@
         }
       }
       .trained-staff__block {
+        margin-bottom: 40px;
         margin-top: 50px;
+        text-align: center;
         h2 {
           font-weight: 700;
           font-size: 28px;
-          text-align: center;
+          margin-bottom: 15px;
           span {
             color: #00730c;
           }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 30px;
+        }
+        button {
+          display: flex;
+          width: 167px;
+          height: 40px;
+          background: #00730c;
+          border-radius: 5px;
+          color: white;
+          border: none;
+          padding: 10px 30px;
+          margin: 0 auto;
+        }
+      }
+      .staff-img__block {
+        position: relative;
+        width: 100%;
+        height: 343px;
+        background-image: url(img/doris-jordan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        button {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background: linear-gradient(
+            6.68deg,
+            #00730c 4.95%,
+            rgba(251, 246, 238, 0) 264.79%
+          );
+          border-radius: 5px;
+          border: none;
+          color: white;
+          padding: 10px 0;
         }
       }
     }
@@ -1296,7 +1336,7 @@
           .plant-growing {
             padding: 25px;
             .plant-growing__img {
-              background: url(img/grass-cutting.svg);
+              background: url(img/Plant-Growing.svg);
               background-position: center;
               background-repeat: no-repeat;
               img {
@@ -1308,7 +1348,7 @@
           }
           .plant-growing:hover {
             .plant-growing__img {
-              background: url(img/grass-cutting-white.svg);
+              background: url(img/Plant-Growing-white.svg);
               background-position: center;
               background-repeat: no-repeat;
             }
@@ -1763,13 +1803,16 @@
               height: 408px;
               box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
               border-radius: 10px;
-              .wp-svg {
+              .wp-bg__img {
                 position: absolute;
-                right: 30px;
-                top: 120px;
-                path {
-                  fill: green;
-                }
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
               }
               .wp-top__row {
                 display: flex;
@@ -1778,7 +1821,177 @@
                 width: 100%;
                 height: 80px;
                 margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/Consultation.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33%;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;
+              }
+            }
+            .wp-card__designwork {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/DesignWork.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: left;
+              }
+            }
+            .wp-card__maintenance {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/Maintenance.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33%;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;
+              }
+            }
 
+            .wp-card__complete {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/Complete.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
                 p {
                   font-family: Nunito, sans-serif;
                   font-weight: 800;
@@ -1801,13 +2014,13 @@
               }
             }
             .wp-card__consultation:hover {
-              .wp-svg path {
-                fill: white;
+              cursor: pointer;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
               }
               background-color: #00730c;
-              cursor: pointer;
-              svg path {
-                fill: white;
+              span {
+                background-image: url(img/Consultation-hover.png);
               }
               .wp-top__row {
                 p {
@@ -1817,56 +2030,16 @@
               h3,
               p {
                 color: white;
-              }
-            }
-            .wp-card__designwork {
-              position: relative;
-              padding: 50px 30px;
-              width: 330px;
-              height: 408px;
-              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
-              border-radius: 10px;
-              .wp-svg {
-                position: absolute;
-                right: 30px;
-                top: 120px;
-                path {
-                  fill: green;
-                }
-              }
-              .wp-top__row {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                height: 80px;
-                margin-bottom: 40px;
-                p {
-                  font-family: Nunito, sans-serif;
-                  font-weight: 800;
-                  font-size: 78px;
-                  line-height: 106px;
-                  color: #e3e3e3;
-                }
-              }
-              h3 {
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 33%;
-                margin-bottom: 20px;
-              }
-              p {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                text-align: justify;
               }
             }
             .wp-card__designwork:hover {
-              background-color: #00730c;
               cursor: pointer;
-              svg path {
-                fill: white;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/DesignWork-hover.png);
               }
               .wp-top__row {
                 p {
@@ -1876,56 +2049,16 @@
               h3,
               p {
                 color: white;
-              }
-            }
-            .wp-card__maintenance {
-              position: relative;
-              padding: 50px 30px;
-              width: 330px;
-              height: 408px;
-              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
-              border-radius: 10px;
-              .wp-svg {
-                position: absolute;
-                right: 30px;
-                top: 120px;
-                path {
-                  fill: green;
-                }
-              }
-              .wp-top__row {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                height: 80px;
-                margin-bottom: 40px;
-                p {
-                  font-family: Nunito, sans-serif;
-                  font-weight: 800;
-                  font-size: 78px;
-                  line-height: 106px;
-                  color: #e3e3e3;
-                }
-              }
-              h3 {
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 33%;
-                margin-bottom: 20px;
-              }
-              p {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                text-align: justify;
               }
             }
             .wp-card__maintenance:hover {
-              background-color: #00730c;
               cursor: pointer;
-              svg path {
-                fill: white;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/Maintenance-hover.png);
               }
               .wp-top__row {
                 p {
@@ -1937,54 +2070,14 @@
                 color: white;
               }
             }
-            .wp-card__complete {
-              position: relative;
-              padding: 50px 30px;
-              width: 330px;
-              height: 408px;
-              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
-              border-radius: 10px;
-              .wp-svg {
-                position: absolute;
-                right: 30px;
-                top: 120px;
-                path {
-                  fill: green;
-                }
-              }
-              .wp-top__row {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                height: 80px;
-                margin-bottom: 40px;
-                p {
-                  font-family: Nunito, sans-serif;
-                  font-weight: 800;
-                  font-size: 78px;
-                  line-height: 106px;
-                  color: #e3e3e3;
-                }
-              }
-              h3 {
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 33%;
-                margin-bottom: 20px;
-              }
-              p {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                text-align: justify;
-              }
-            }
             .wp-card__complete:hover {
-              background-color: #00730c;
               cursor: pointer;
-              svg path {
-                fill: white;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/Complete-hover.png);
               }
               .wp-top__row {
                 p {

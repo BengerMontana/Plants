@@ -230,7 +230,7 @@
     display: flex;
   }
   .main .plant-growing .plant-growing__img {
-    background: url(img/grass-cutting.svg);
+    background: url(img/Plant-Growing.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -785,11 +785,9 @@
     margin-bottom: 30px;
   }
   .main .staff-process__block {
-    height: 100%;
     width: 100%;
     background-color: white;
     padding-top: 50px;
-    margin-bottom: 55px;
   }
   .main .staff-process__block .working-process__block .wp-text__block h2 {
     font-weight: 700;
@@ -984,14 +982,14 @@
   }
   .main .staff-process__block .working-process__block .wp-img__block {
     position: relative;
-    margin-bottom: 100px;
   }
   .main .staff-process__block .working-process__block .wp-img__block img {
     width: 100%;
+    height: 100%;
   }
   .main .staff-process__block .working-process__block .wp-img__block .wp-textbtn__block {
     position: absolute;
-    padding: 50px 30px;
+    padding: 40px 30px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1018,15 +1016,53 @@
     text-align: center;
   }
   .main .staff-process__block .trained-staff__block {
+    margin-bottom: 40px;
     margin-top: 50px;
+    text-align: center;
   }
   .main .staff-process__block .trained-staff__block h2 {
     font-weight: 700;
     font-size: 28px;
-    text-align: center;
+    margin-bottom: 15px;
   }
   .main .staff-process__block .trained-staff__block h2 span {
     color: #00730c;
+  }
+  .main .staff-process__block .trained-staff__block p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .main .staff-process__block .trained-staff__block button {
+    display: flex;
+    width: 167px;
+    height: 40px;
+    background: #00730c;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin: 0 auto;
+  }
+  .main .staff-process__block .staff-img__block {
+    position: relative;
+    width: 100%;
+    height: 343px;
+    background-image: url(img/doris-jordan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+  .main .staff-process__block .staff-img__block button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1248,7 +1284,7 @@
     padding: 25px;
   }
   .main .services-we__provide .services-list li .plant-growing .plant-growing__img {
-    background: url(img/grass-cutting.svg);
+    background: url(img/Plant-Growing.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -1258,7 +1294,7 @@
     margin: 0 auto;
   }
   .main .services-we__provide .services-list li .plant-growing:hover .plant-growing__img {
-    background: url(img/grass-cutting-white.svg);
+    background: url(img/Plant-Growing-white.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -1693,13 +1729,16 @@
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation .wp-svg {
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation .wp-bg__img {
     position: absolute;
-    right: 30px;
-    top: 120px;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation .wp-svg path {
-    fill: green;
+    width: 110px;
+    height: 160px;
+    right: 35px;
+    top: 110px;
+    background-image: url(img/wp-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation .wp-top__row {
     display: flex;
@@ -1716,6 +1755,14 @@
     line-height: 106px;
     color: #e3e3e3;
   }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation span {
+    width: 70px;
+    height: 70px;
+    background-image: url(img/Consultation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation h3 {
     font-weight: 700;
     font-size: 24px;
@@ -1728,23 +1775,6 @@
     line-height: 30px;
     text-align: justify;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover {
-    background-color: #00730c;
-    cursor: pointer;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover .wp-svg path {
-    fill: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover svg path {
-    fill: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover .wp-top__row p {
-    color: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover h3,
-.main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover p {
-    color: white;
-  }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork {
     position: relative;
     padding: 50px 30px;
@@ -1753,13 +1783,24 @@
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork .wp-svg {
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork .wp-bg__img {
     position: absolute;
-    right: 30px;
-    top: 120px;
+    width: 110px;
+    height: 160px;
+    right: 35px;
+    top: 110px;
+    background-image: url(img/wp-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork .wp-svg path {
-    fill: green;
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork span {
+    width: 70px;
+    height: 70px;
+    background-image: url(img/DesignWork.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork .wp-top__row {
     display: flex;
@@ -1779,28 +1820,14 @@
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork h3 {
     font-weight: 700;
     font-size: 24px;
-    line-height: 33%;
+    line-height: 33px;
     margin-bottom: 20px;
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork p {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    text-align: justify;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover {
-    background-color: #00730c;
-    cursor: pointer;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover svg path {
-    fill: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover .wp-top__row p {
-    color: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover h3,
-.main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover p {
-    color: white;
+    text-align: left;
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance {
     position: relative;
@@ -1810,13 +1837,24 @@
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance .wp-svg {
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance .wp-bg__img {
     position: absolute;
-    right: 30px;
-    top: 120px;
+    width: 110px;
+    height: 160px;
+    right: 35px;
+    top: 110px;
+    background-image: url(img/wp-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance .wp-svg path {
-    fill: green;
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance span {
+    width: 70px;
+    height: 70px;
+    background-image: url(img/Maintenance.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance .wp-top__row {
     display: flex;
@@ -1845,20 +1883,6 @@
     line-height: 30px;
     text-align: justify;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover {
-    background-color: #00730c;
-    cursor: pointer;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover svg path {
-    fill: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover .wp-top__row p {
-    color: white;
-  }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover h3,
-.main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover p {
-    color: white;
-  }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete {
     position: relative;
     padding: 50px 30px;
@@ -1867,13 +1891,24 @@
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete .wp-svg {
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete .wp-bg__img {
     position: absolute;
-    right: 30px;
-    top: 120px;
+    width: 110px;
+    height: 160px;
+    right: 35px;
+    top: 110px;
+    background-image: url(img/wp-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete .wp-svg path {
-    fill: green;
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete span {
+    width: 70px;
+    height: 70px;
+    background-image: url(img/Complete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete .wp-top__row {
     display: flex;
@@ -1902,12 +1937,66 @@
     line-height: 30px;
     text-align: justify;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete:hover {
-    background-color: #00730c;
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover {
     cursor: pointer;
+    background-color: #00730c;
   }
-  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete:hover svg path {
-    fill: white;
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover .wp-bg__img {
+    background-image: url(img/wp-bg-hover.svg);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover span {
+    background-image: url(img/Consultation-hover.png);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover .wp-top__row p {
+    color: white;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover h3,
+.main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__consultation:hover p {
+    color: white;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover {
+    cursor: pointer;
+    background-color: #00730c;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover .wp-bg__img {
+    background-image: url(img/wp-bg-hover.svg);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover span {
+    background-image: url(img/DesignWork-hover.png);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover .wp-top__row p {
+    color: white;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover h3,
+.main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__designwork:hover p {
+    color: white;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover {
+    cursor: pointer;
+    background-color: #00730c;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover .wp-bg__img {
+    background-image: url(img/wp-bg-hover.svg);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover span {
+    background-image: url(img/Maintenance-hover.png);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover .wp-top__row p {
+    color: white;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover h3,
+.main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__maintenance:hover p {
+    color: white;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete:hover {
+    cursor: pointer;
+    background-color: #00730c;
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete:hover .wp-bg__img {
+    background-image: url(img/wp-bg-hover.svg);
+  }
+  .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete:hover span {
+    background-image: url(img/Complete-hover.png);
   }
   .main .staff-process__block .working-process__block .wp-cards__block .wp-card__flex .wp-card__complete:hover .wp-top__row p {
     color: white;
